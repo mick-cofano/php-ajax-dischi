@@ -5,9 +5,32 @@
 // per la prima milestone
 require_once __DIR__ . '/database/database.php';
 
-print_r($dischi);
+?>
 
-// qui a questo punto possiamo creare (per la prima milestone) tutto il nostro html e ciclare i nostri dischi (sempre in php)
-// e stampare copertina, titolo e così via, come da screenshot.
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <div class="album-container">
+      <h2>ALBUMS</h2>
+      <?php foreach ($arrayDischi as $item) { ?>
+
+        <div class="item">
+          <img src="img/<?php echo $item['imgUrl']; ?>" alt="">
+          <h3><?php echo $item['album']; ?></h3>
+          <h4><?php echo $item['autore']; ?></h4>
+          <h6><?php echo $item['anno']; ?></h6>
+          <h4><?php echo $item['genere']; ?></h4>
+        </div>
+
+      <?php } ?>
+    </div>
 
 
+
+  </body>
+</html>
