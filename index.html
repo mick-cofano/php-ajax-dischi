@@ -16,21 +16,37 @@
     -->
 
     <div id="app">
+      <header>
+
+      </header>
+
+      <main>
+        <div class="album-container">
+
+          <div class="item" v-for="item in arrayDischi">
+            
+            <div class="item-logo">
+              <img :src="'img/' + item.imgUrl" alt="">
+            </div>
+            <div class="item-album">
+              <h3>{{item.album}}</h3>
+            </div>
+            <div class="item-autore">
+              <h4>{{item.autore}}</h4>
+            </div>
+            <div class="item-anno">
+              <h5>{{item.anno}}</h5>
+            </div>
+            <div class="item-genere">
+              <h4>{{item.genere}}</h4>
+            </div>
+
+          </div>
 
 
-      <div class="album-container">
-
-        <div class="item" v-for="item in arrayDischi">
-
-          <img :src="'img/' + item.imgUrl" alt="">
-          <h3>{{item.album}}</h3>
-          <h4>{{item.autore}}</h4>
-          <h5>{{item.anno}}</h5>
-          <h4>{{item.genere}}</h4>
         </div>
+      </main>
 
-
-      </div>
 
 
     </div>
