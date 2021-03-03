@@ -70,7 +70,7 @@ $arrayDischi =[
     'imgUrl' => 'snoop-dogg-R_and_G_(Rhythm_and_Gangsta)_The_Masterpiece_.jpg',
     'anno' => '2004',
     'genere' => 'Old School Hip-Hop'
-  ]
+  ],
 ];
 
 ?>

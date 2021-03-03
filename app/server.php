@@ -6,7 +6,6 @@
 
 require_once __DIR__ . '/../database/database.php';
 
-header('Content-type: application/json');
 
-$json = json_encode($arrayDischi);
-echo $json;
+header('Content-Type:application/json');
+echo json_encode($arrayDischi);
