@@ -18,13 +18,20 @@
     <div id="app">
       <header>
 
+          <div class="select">
+            <label>Filtra per genere:</label>
+            <select v-model="genereSelezionato">
+              <option v-for="item in generi" :value="item">{{item}}</option>
+            </select>
+          </div>
+
       </header>
 
       <main>
         <div class="album-container">
 
           <div class="item" v-for="item in arrayDischi">
-            
+
             <div class="item-logo">
               <img :src="'img/' + item.imgUrl" alt="">
             </div>

@@ -12,9 +12,13 @@ new Vue({
     axios.get("app/server.php")
     .then(function (response) {
       self.arrayDischi = response.data;
-      console.log(self.arrayDischi);
-    });
-  },
 
+      self.arrayDischi.foreach(function (item) {
+        if (!self.generi.includes(item.genere)) {
+          self.generi.push(item.genere);
+        }
+      });
+    });
+  }
 });
   Vue.config.devtools = true
