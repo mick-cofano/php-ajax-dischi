@@ -65,7 +65,7 @@ $arrayDischi =[
     'genere' => 'Rap'
   ],
   [
-    'album' => 'R&G (Rhythm & Gangsta): The Masterpiece',
+    'album' => 'R&G (Rhythm & Gangsta)',
     'autore' => 'Snoop Dogg',
     'imgUrl' => 'snoop-dogg-R_and_G_(Rhythm_and_Gangsta)_The_Masterpiece_.jpg',
     'anno' => '2004',

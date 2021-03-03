@@ -39,4 +39,6 @@
 }
 #app main .album-container .item-album, #app main .album-container .item-autore, #app main .album-container .item-anno, #app main .album-container .item-genere {
   color: white;
+  margin: 0 auto;
+  padding-top: 7px;
 }
