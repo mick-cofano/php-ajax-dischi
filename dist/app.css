@@ -1,1 +1,10 @@
-
+#app .album-container {
+  width: 80%;
+  min-width: 900px;
+  margin: 0 auto;
+}
+#app .album-container .item {
+  width: 33%;
+  height: 400px;
+  background-color: white;
+}

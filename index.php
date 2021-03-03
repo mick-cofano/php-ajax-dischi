@@ -11,26 +11,29 @@ require_once __DIR__ . '/database/database.php';
 <html lang="it" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="dist/app.css">
+    <title>php-ajax-dischi</title>
   </head>
   <body>
 
-    <div class="album-container">
-      <h2>ALBUMS</h2>
-      <?php foreach ($arrayDischi as $item) { ?>
+<div id="app">
 
-        <div class="item">
-          <img src="img/<?php echo $item['imgUrl']; ?>" alt="">
-          <h3><?php echo $item['album']; ?></h3>
-          <h4><?php echo $item['autore']; ?></h4>
-          <h6><?php echo $item['anno']; ?></h6>
-          <h4><?php echo $item['genere']; ?></h4>
-        </div>
+  <div class="album-container">
+    <h2>ALBUMS</h2>
+    <?php foreach ($arrayDischi as $item) { ?>
 
-      <?php } ?>
-    </div>
+      <div class="item">
+        <img src="img/<?php echo $item['imgUrl']; ?>" alt="">
+        <h3><?php echo $item['album']; ?></h3>
+        <h4><?php echo $item['autore']; ?></h4>
+        <h6><?php echo $item['anno']; ?></h6>
+        <h4><?php echo $item['genere']; ?></h4>
+      </div>
 
+    <?php } ?>
+  </div>
 
+</div>
 
   </body>
 </html>
